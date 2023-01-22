@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Judge</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 10px;
+      }
+    </style>
+    <script type="text/javascript" src="./tabulator.min.js"></script>
+    <link href="./tabulator.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Submissions!</h1>
+      <div id="example-table"></div>
+	  
+	<script type="text/javascript">
+		var tabledata = [
+			{jgjgkjg: "var"},
+		];
+		var table = new Tabulator("#example-table", {data:tabledata, autoColumns:true});
+		table.redraw(true)
+    </script>
+    </div>
+  </body>
+</html>
