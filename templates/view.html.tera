@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Submission</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Success!</h1>
+
+      <h3>Submission Data</h3>
+
+      <ul>
+              <li><strong>Submission</strong> - {{ json.Submission }}</li>
+              <li><strong>Task</strong> - {{ json.Task }}</li>
+              <li><strong>Language</strong> - {{ json.Language }}</li>
+              <li><strong>User</strong> - {{ json.User }}</li>
+              <li><strong>Time</strong> - {{ json.Time }}</li>
+      </ul>
+	  
+	  {{ code | safe }}
+
+      <a href="/">&lt; Submit Another</a>
+	  
+	  <a href="/submissions/0">&lt; View Submissions</a>
+  </body>
+</html>

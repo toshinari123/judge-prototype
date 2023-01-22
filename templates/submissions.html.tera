@@ -1,0 +1,39 @@
+{% import "macros" as m %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Judge</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 10px;
+      }
+    </style>
+    <link href="/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/tabulator.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Submissions!</h1>
+      <div id="example-table"></div>
+    </div>
+	<a href="/submissions/0">&lt;0&gt;</a> <a href="/submissions/1">&lt;1&gt;</a> <a href="/submissions/2">&lt;2&gt;</a> <a href="/submissions/3">&lt;3&gt;</a> <a href="/submissions/4>&lt;4&gt;</a> <a href="/submissions/5">&lt;5&gt;</a> <a href="/submissions/6">&lt;6&gt;</a> <a href="/submissions/7">&lt;7&gt;</a> <a href="/submissions/8">&lt;8&gt;</a> <a href="/submissions/9">&lt;9&gt;</a>
+	
+	
+      <a href="/">&lt; Submit Another</a>
+	<script type="text/javascript">
+		var tabledata = [
+			{{ table | safe }}
+		];
+		var table = new Tabulator("#example-table", {
+			data:tabledata, 
+			autoColumns:true, 
+		});
+		table.redraw(true)
+    </script>
+  </body>
+</html>

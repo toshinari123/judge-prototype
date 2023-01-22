@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Submission</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Error!</h1>
+
+    <h3>During {{ during }}</h3>
+    <h3>{{ error }}</h3>
+
+      <a href="/">&lt; Submit Another</a>
+  </body>
+</html>
